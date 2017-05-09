@@ -1,30 +1,14 @@
-total = 0
 priority=[]
 processes={}
-bt=[]      #burst time
-at=[]		#arrival time
+bursttime=[]   
+arrivaltime=[]
 n = input("Enter number of processes:")
-for i in range (0,n):
-	priority_no=input("Priority number is:")
-	priority.append(priority_no)
-	a_time=input("Arrival Time is:")
-	at.append(a_time)
-	b_time=input("Burst Time is:")
-	bt.append(b_time)
-	processes[priority[i]] = [i+1 , at[i] , bt[i]]
-
-print "Priority#	Arrival Time           Burst Time"
-for i in range (0,n):
-	print priority[i] , "\t\t\t" , at[i], "\t\t\t" , bt[i] 
-
-priority.sort()
-
-total = processes.get(priority[0])[1]
-min = total
-if(total>0):
-	print '0 -------' , total 
-
-for i in range (0,n):
-	total = total + processes.get(priority[i])[2]
-	print min , "________" , total
-	min = total
+for (i=0; i=n; i++)
+	priority_no=input("The Priority number is:")
+	arrival_time=input("The Arrival Time is:")
+	burst_time=input("Burst Time is:")
+	processes[priority[i]] = [i+1 , arrivaltime[i] , bursttime[i]]
+	if (priority[i]> priority[i+1]
+         print "Priority Number      	Arrival Time           Burst Time"
+		 for (i=0; i=n; i++)
+		print (priority[i] , "\t" , arrivaltime[i], "\t" , bursttime[i])
